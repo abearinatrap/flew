@@ -12,6 +12,7 @@ Following the [FLEW](https://doi.org/10.1145/3495243.3517030) paper proposal tha
 ```c
 /* The descrambling process is extremely simple. Furthermore, the descrambling can be done in batch to each byte or word, and does not require extracting/reassembling bits to process them one-by-one. Specifically, the descrambling in 802.11b can be simplified as XOR’ing the input with two shifted versions of the input. With least-significant-bit-first ordering, the descrambling process involves only 4 lines of code: */
 
+// from FLEW
 reg = (descrambling_in<<8) | lastbyte;
 reg2 = reg ^ (reg>>3) ^ (reg>>7);
 descrambling_out = 0xFF & (reg2);

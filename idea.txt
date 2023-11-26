@@ -1,0 +1,7 @@
+ideas (in order of most promising-ly possible)
+
+1. Using Matlab waveform generator to generate waveform, and code? the demodulation and stuff in matlab
+2. Use gnu radio to somehow make a diagram of the FLEW process?
+3. combine these together???
+
+
