@@ -2,6 +2,9 @@
 
 This is a repository for a project in CS538: Computer Communications and Networks at the University of Alabama
 
+## Files
+ - wave.m produces "modSig": demodulated 802.11b data. This can be seen in the data written below: bits 67-73 = 1010101 74-105 = 0x05AE4701
+
 ## Process by FSK chip
 Following the [FLEW](https://doi.org/10.1145/3495243.3517030) paper proposal that, "with an appropriate frequency shift, conventional FM/FSK receivers can work as a DSSS plus DBPSK demodulater"
 
