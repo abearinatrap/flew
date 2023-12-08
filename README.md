@@ -2,6 +2,12 @@
 
 This is a repository for a project in CS538: Computer Communications and Networks at the University of Alabama
 
+quency deviation that is permitted is specified in the Bluetooth® Core Specification and depends
+on the selected symbol rate, which is either 1 or 2 mega-symbols per second (Msym/s) in Bluetooth
+LE. For the 1 Msym/s symbol rate, a minimum frequency deviation of 185 kHz is specified, whereas
+for the faster symbol rate, the minimum frequency deviation is 370 kHz. These values were chosen
+carefully, to help make the recognition of encoded 1s and 0s in a signal reliable.
+
 ## Files
  - wave.m produces "modSig": demodulated 802.11b data. This can be seen in the data written below: bits 67-73 = 1010101 74-105 = 0x05AE4701
 

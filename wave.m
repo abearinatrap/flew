@@ -25,6 +25,8 @@ Fs = wlanSampleRate(dsssCfg); 								 % Specify the sample rate of the waveform
 dbpskdemod = comm.DBPSKDemodulator();
 
 waveform2 = real(waveform2);
+modSig2 = dbpskdemod(waveform2);
+dbpskdemod = comm.DBPSKDemodulator();
 chunkSize = 11;
 
 % Determine the number of chunks
@@ -56,6 +58,6 @@ end
 
 
 modSig = dbpskdemod(data2);
-fileID = fopen('binary_data.bin', 'wb');
-fwrite(fileID, modSig, 'ubit1');
-fclose(fileID);
+%fileID = fopen('binary_data.bin', 'wb');
+%fwrite(fileID, modSig, 'ubit1');
+%fclose(fileID);
