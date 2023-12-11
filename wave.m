@@ -58,6 +58,7 @@ end
 
 
 modSig = dbpskdemod(data2);
+save("80211data", 'modSig');
 %fileID = fopen('binary_data.bin', 'wb');
 %fwrite(fileID, modSig, 'ubit1');
 %fclose(fileID);
